@@ -132,6 +132,8 @@ header h1::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 17px;
 }
 .goal p {
     font-size: 24px;
@@ -271,7 +273,7 @@ footer p {
     box-shadow: 0px 0px 10px 0px #00000050;
 }
 
-@media (max-width: 390px)  {
+@media (max-width: 767px)  {
     /* container */
     .container {
         width: 100%;
@@ -282,6 +284,7 @@ footer p {
     /* header */
     header {
         height: 126px;
+        margin-top: 0px;
     }
     header h1::before {
         content: "";
@@ -323,6 +326,7 @@ footer p {
     }
     .goal .txtBox {
         flex-direction: column;
+        gap: 0;
     }
     .goal .txtBox p:first-child {
         margin-bottom: 19px;
