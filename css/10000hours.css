@@ -36,15 +36,28 @@ body {
     background-color: #5B2386;
     overflow-x: hidden;
 }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .container {
     width: 100vw;
     height: 100vh;
     position: relative;
-    margin: 120px auto 70px;
 }
 
 header {
     height: 265px;
+    margin-top: 120px;
     position: relative;
 }
 
@@ -76,7 +89,7 @@ header h1::after {
     background-size: contain;
 }
 
-.subTit p {
+.subTit h2 {
     margin-top: 46px;
     color: #F5DF4D;
     font-family: 'OTEnjoystoriesBA';
@@ -99,7 +112,7 @@ header h1::after {
     background: url(../img/quotes.png) no-repeat;
     background-size: contain;
 }
-.law p {
+.law h2 {
     font-size: 18px;
     line-height: 24px;
 }
@@ -282,12 +295,12 @@ footer p {
     }
 
     /* subTit */
-    .subTit p {
+    .subTit h2 {
         font-size: 22px;
     }
 
     /* law */
-    .law p {
+    .law h2 {
         font-size: 14px;
     }
     .law::before {
